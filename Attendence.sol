@@ -4,7 +4,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 
-contract Attendence{
+contract Attendence {
   address teacher = msg.sender;
      uint  Totalstudent = 20;
    uint public Totalstudent_pre  =0;
