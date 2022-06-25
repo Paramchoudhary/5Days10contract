@@ -2,13 +2,23 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
+//1. create a contract 
+
 contract Lottery {
+
+//2. declare owner of the contract
     address public manager;
+    
+//3. create an array for storing players addresses.
     address[] public players;
+    
+//4. Set your manager or owner of the contract
 
     constructor() {
         manager = msg.sender;
     }
+    
+//5. create a 
       function enter() public payable {
         require(msg.value > .01 ether);
 
